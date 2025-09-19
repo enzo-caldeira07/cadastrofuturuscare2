@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+}
+
+.left {
+  background-image: url('https://github.com/davidteixeira23/pasta-de-imagens/blob/main/cachorro%20e%20gato.png?raw=true'); /* Troque pela sua imagem */
+  background-size: cover;
+  background-position: center;
+}
+
+.right {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.right h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.submit-button{
+    width: 100%;
+  padding: 12px;
+  background: #7b2ff7;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.form-box button:hover {
+  background: #5e22b5;
+}
+
+.option-button:hover {
+  background-color: #85097e;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .option-button {
+    width: 90%;
+  }
+}
